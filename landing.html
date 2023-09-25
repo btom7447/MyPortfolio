@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="png" href="/images/logo.png">
+    <link rel="stylesheet" href="landing.css">
+    <title>Benjamin Tom</title>
+</head>
+<body>
+    <script>
+        function toggleNav() {
+        var hamburger = document.querySelector('.hamburger-menu');
+        var header = document.querySelector('header');
+        hamburger.classList.toggle('active');
+        header.classList.toggle('active');
+        }                  
+    </script>
+
+    <!-- Hamburger button -->
+    <div class="hamburger-menu" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <video src="video/background (2).mp4" autoplay muted loop></video>
+    <header>
+        <a href="landing.html"><img class="logo" src="/images/logo.png" alt="logo"></a>
+        <div class="title">
+            <h1>Tom</h1>
+            <h3>Web Developer</h3>
+        </div>
+        <div class="profile-picture">
+            <img src="/images/profile picture (1).jpg" alt="profile picture">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="about.html">Who Am I?</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+                <!-- BODY OF LANDING PAGE -->
+    <section class="codes">
+<pre><code>
+    &lt;HTML&gt;
+        &lt;body&gt;
+            &lt;h1&gt;
+            <span class="one">
+        Hello World, 
+        I'm Benjamin Tom
+            </span>
+            &lt;/h1&gt;
+            &lt;p&gt;
+                <span class="two">
+                        a   Front End Developer
+                </span>
+            &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+        <div class="social-icons">
+            <a href="https://github.com/btom7447" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank"><img src="images/linkedin (2).png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/benjamin.tom.71?mibextid=D4KYlr" target="_blank"><img src="images/facebook (2).png" alt="Facebook"></a>
+            <a href="https://instagram.com/benjamin_tom_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img src="images/instagram (4).png" alt="Instagram"></a>
+        </div>
+    </section>
+</body>
+</html>

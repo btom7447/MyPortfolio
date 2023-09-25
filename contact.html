@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="png" href="/images/logo.png">
+    <link rel="stylesheet" href="contact.css">
+    <title>Benjamin Tom</title>
+</head>
+<body>
+    <script>
+        function toggleNav() {
+        var hamburger = document.querySelector('.hamburger-menu');
+        var header = document.querySelector('header');
+        hamburger.classList.toggle('active');
+        header.classList.toggle('active');
+        }                  
+    </script>
+
+    <!-- Hamburger button -->
+    <div class="hamburger-menu" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <header>
+        <a href="landing.html"><img class="logo" src="/images/logo.png" alt="logo"></a>
+        <div class="title">
+            <h1>Tom</h1>
+            <h3>Web Developer</h3>
+        </div>
+        <div class="profile-picture">
+            <img src="/images/profile picture (1).jpg" alt="profile picture">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="about.html">Who Am I?</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-me">
+        <h3>Bring your vision to life</h3>
+        <h1>Contact Me</h1>
+        <p> 
+            Get in touch with me via Social media or email.
+        </p>
+        <div class="social-icons">
+            <a href="https://github.com/btom7447" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank"><img src="images/linkedin (2).png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/benjamin.tom.71?mibextid=D4KYlr" target="_blank"><img src="images/facebook (2).png" alt="Facebook"></a>
+            <a href="https://instagram.com/benjamin_tom_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img src="images/instagram (4).png" alt="Instagram"></a>
+        </div>
+    </section>
+
+    <section class="message">
+        <h1>Leave A Message</h1>
+        <div class="inputs">
+            <input type="text" id="first-name" required placeholder="First Name *">
+            <input type="text" id="last-name" required placeholder="Last Name *">
+            <input type="email" id="email" required placeholder="Email *">
+            <input type="number" min="11" max="15" id="phone-number" required placeholder="Phone Number">
+            <input type="text" id="subject" required placeholder="Subject *">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="How can I help?"></textarea>
+        </div>
+        <a href="#"><button class="submit">SUBMIT</button></a>
+    </section>
+</body>
+</html>

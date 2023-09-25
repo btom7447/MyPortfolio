@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="png" href="/images/logo.png">
+    <link rel="stylesheet" href="about.css">
+    <title>Who Am I?</title>
+</head>
+<body>
+    <script>
+        function toggleNav() {
+        var hamburger = document.querySelector('.hamburger-menu');
+        var header = document.querySelector('header');
+        hamburger.classList.toggle('active');
+        header.classList.toggle('active');
+        }                  
+    </script>
+
+    <!-- Hamburger button -->
+    <div class="hamburger-menu" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    
+    <header>
+        <a href="landing.html"><img class="logo" src="/images/logo.png" alt="logo"></a>
+        <div class="title">
+            <h1>Tom</h1>
+            <h3>Web Developer</h3>
+        </div>
+        <div class="profile-picture">
+            <img src="/images/profile picture (1).jpg" alt="profile picture">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="about.html">Who Am I?</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about-me">
+        <h3>Get to know me</h3>
+        <h1>About Me</h1>
+            <!-- flexbox -->
+        <div class="about">
+            <div class="about-one">
+                <img src="images/profile picture (2).jpg" alt="">
+            </div>
+            <!-- flexbox -->
+            <div class="about-two">
+                <div class="about-two-one">
+                    <h4>Who am I?</h4>
+                    <h2>A Front End Developer</h2>
+                    <p>
+                        Based in Nigeria, who is passionate about
+                        learning and developing with a desire to apply skills on a larger development team. 
+                        I am capable of continuous learning from fellow developers, with an eargerness to tackle
+                        complex problems and maximize user efficiency.
+                    </p>
+                </div>
+                <div class="about-two-two">
+                    <h4>Name: Benjamin John Tom</h4>
+                    <h4>Email: <span class="bold">tombenjamin7447@gmail.com</span></h4>
+                    <h4>Age: 21</h4>
+                    <h4>Location: Ife, Nigeria</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-me-cont">
+        <p class="left">
+            My journey in the world of web development began with the foundational trio of HTML, CSS, and JavaScript. 
+            These core languages form the bedrock of my skill set, and I've gained an above-average proficiency in them 
+            through dedicated learning and practice.  
+            It was in April 2023 that I embarked on this exhilarating web development journey. Since then, each day has 
+            been a step forward in my pursuit of mastering the art of crafting seamless digital experiences. 
+            What might seem like a short time frame has been packed with intense curiosity, rigorous learning, and hands-on experimentation. 
+        </p>
+        <p class="left">
+            Throughout this journey, I've found myself captivated by the potential of web technologies to bring ideas to life. 
+            Every line of code I write, every design I create, holds the promise of turning imagination into reality. 
+            This innate excitement fuels my dedication to becoming a skilled front-end developer, ready to tackle challenges 
+            and build user-centric websites. While my experience might be young, my determination to excel is unwavering. 
+            I thrive on embracing challenges, as they offer opportunities to learn, adapt, and push boundaries. The fast progress I've made in my understanding and practical application of web development concepts stands as a testament to my commitment.
+        </p>
+        <p class="left">
+            In addition to HTML, CSS, and JavaScript, I've been exploring the dynamic world of front-end frameworks and libraries such as React and Vue. 
+            These tools offer an exciting realm of possibilities for creating interactive and engaging web applications. 
+            My eagerness to explore new technologies and methodologies is a driving force behind my continuous growth.
+             As I move forward, I am excited to further hone my skills, expand my knowledge, and contribute to the dynamic field of web development. 
+             I am open to collaborations, eager to learn from experienced professionals, and committed to delivering top-notch digital experiences.
+        </p>
+        <p class="left">
+            Thank you for taking the time to learn a little more about my journey. I look forward to the adventures 
+            ahead and the chance to turn ideas into reality through the power of code."
+        </p>
+    </section>
+    <div class="social-icons">
+        <a href="https://github.com/btom7447" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank"><img src="images/linkedin (2).png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/benjamin.tom.71?mibextid=D4KYlr" target="_blank"><img src="images/facebook (2).png" alt="Facebook"></a>
+        <a href="https://instagram.com/benjamin_tom_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img src="images/instagram (4).png" alt="Instagram"></a>
+    </div>
+</body>
+</html>
