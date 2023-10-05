@@ -24,6 +24,7 @@
         <div class="profilePicture">
             <img src="images/profile picture (1).jpg" alt="profile picture">
         </div>
+        <!-- NAVIGATION -->
         <nav>
             <ul class="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -34,31 +35,33 @@
             </ul>
         </nav>
     </header>
-    <!-- BACKGROUND VIDEO -->
-    <section class="video-container">
+    <!-- VIDEO BACKGROUND -->
+    <section class="videoContainer">
         <video src="video/background (2).mp4" autoplay muted loop></video>
+        <!-- CODES SNIPPET -->
         <section class="codes">
-            <pre>
-                <code>
-                    &lt;html&gt;
-                        &lt;body&gt;
-                            &lt;h1&gt;  
-                            <span class="one">
-                        Hello World, 
-                        I'm Benjamin Tom
-                            </span>
-                            &lt;/h1&gt;
-                            &lt;p&gt;
-                            <span class="two">
-                                                            a Front End Developer
-                            </span>
-                            &lt;/p&gt;
-                        &lt;/body&gt;
-                    &lt;/html&gt;
-                </code>
-            </pre>
+        <pre>
+        <code>
+            &lt;html&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;  
+                    <span class="one">
+                            Hello World, 
+                            I'm Benjamin Tom
+                    </span>
+                    &lt;/h1&gt;
+                    &lt;p&gt;
+                    <span class="two">
+                                            a Front End Developer
+                    </span>
+                    &lt;/p&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+        </pre>
         </section>
     </section>
+    <!-- SOCIAL ICONS -->
     <section class="socials">
         <a href="https://github.com/btom7447" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         <a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank"><img src="images/linkedin (2).png" alt="LinkedIn"></a>
@@ -68,6 +71,13 @@
     <!-- JAVASCRIPT CODES -->
     <script>
         let isOpen = false;
+
+        function initNav() {
+            const header = document.querySelector('.header');
+            if (window.innerWidth <= 480) {     // DISPLAY OFF 
+                header.style.display = 'none'; 
+            }
+        }
 
         function toggleNav() {
             isOpen = !isOpen;
@@ -81,14 +91,21 @@
                 bar2.style.opacity = '0';
                 bar3.style.transform = 'rotate(45deg) translate(-5px, -6px)';
 
-                header.style.left = '0';
+                if (window.innerWidth <= 480) {
+                    header.style.display = 'block'; // DISPLAY ON
+                }
             } else {
                 bar1.style.transform = 'none';
                 bar2.style.opacity = '1';
                 bar3.style.transform = 'none';
-                header.style.left = '-50rem';
+
+                if (window.innerWidth <= 480) {
+                    header.style.display = 'none'; // DISPLAY OFF
+                }
             }
         }
+
+        window.onload = initNav;
     </script>
 </body>
 </html>

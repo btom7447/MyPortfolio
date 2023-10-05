@@ -1,533 +1,93 @@
-/* Add styles for the video container */
-.video-container {
-    position: relative;
+.aboutFlexBox{
+    padding-top: 50px;
+    width: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
 }
-/* Style the video as the background */
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.first img{
+    width: 450px;
+    height: 450px;
     object-fit: cover;
-    z-index: -1; /* Place the video behind other content */
+    margin: 0 0 0 -50px
 }
-/* Style the codes section on top of the video */
-.codes {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-family: "Consolas", "monospace";
-    font-size: 12px;
-    padding: 10px 60px;
-    border-radius: 2%;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+.second{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
-/* Rest of your existing styles for .one and .two */
-.one {
+.about-two-one{
+    width: 100%;
+    margin: 0 0 0 0;
+    border-bottom: 2px solid rgb(127, 111, 243);
+}
+.about-two-one>p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    line-height: 2;
+}
+.about-two-one>h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(127, 111, 243);
+}
+.about-two-one>h2{
     font-family: "lobster two", sans-serif;
     font-weight: 500;
     font-size: 40px;
-    text-align: right;
-    color: rgb(127, 111, 243);
-    width: fit-content;
-}
-
-.two {
-    font-family: "montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    text-align: right;
-    text-transform: uppercase;
-    color: rgb(127, 111, 243);
-    margin: 0 0 0 -50px;
-    width: fit-content;
-}
-
-@media (min-width: 319px) and (max-width: 480px) {
-    .hamburgerMenu {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px; 
-        z-index: 12; 
-    }
-    .hamburgerMenu::before, .hamburgerMenu::after {
-        width: 20px;
-    }
-    video {
-        margin: auto;
-        width: 80vw;
-        height: 80vh;
-        object-fit: cover;
-        z-index: -20;
-    }
-    .hamburgerMenu {
-        display: none;
-        cursor: pointer;
-    }
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: rgb(127, 111, 243);
-        margin: 6px 0;
-    }
-    /* NAVIGATION BAR */
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 15%;
-        height: 100vh;
-        padding: 2rem;
-        background-color: rgb(0, 0, 0);
-        box-shadow: 0 0 10px rgb(127, 111, 243);
-        z-index: 10;
-    }
-    .logo {
-        top: 1;
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        padding: 5px;
-    }
-    .title h1 {
-        font-family: "lobster two", sans-serif;
-        font-weight: 500;
-        font-size: 60px;
-        text-align: center;
-        color: white;
-        margin: 0 0 0 0;
-    }
-    .title h3 {
-        font-family: "montserrat", sans-serif;
-        font-weight: 200;
-        font-size: 15px;
-        color: rgb(127, 111, 243);
-        margin: 0 0 80px 0;
-    }
-    .profilePicture img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-    .navLinks {
-        width: 100%;
-    }
-    .navLinks li {
-        list-style: none;
-        display: inline-block;
-        justify-content: center;
-        width: 70%;
-        text-align: left;
-        padding: 10px 0;
-        margin: 0 0 0 35px;
-        border-top: 1px solid rgb(127, 111, 243);
-    }
-    .navLinks li:last-child {
-        border-bottom: 1px solid rgb(127, 111, 243);
-    }
-    .navLinks li > a {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 200;
-        font-size: 14px;
-        color: white;
-        padding: 10px;
-    }
-    .navLinks li > a:hover, :active {
-        color: rgb(127, 111, 243);
-    }
-    .video-container {
-        margin: auto;
-        padding: 5rem;
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-    }
-    .video-container video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .codes {
-        margin: auto;
-        width: 60%;
-        height: fit-content;
-        font-family: "Consolas", "monospace";
-        font-size: 1rem;
-        padding: 0.5rem;
-        border-radius: 2%;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.8);
-        box-shadow: 0 0 10px rgb(127, 111, 243);
-    }
-    .one {
-        font-family: "lobster two", sans-serif;
-        font-weight: 500;
-        font-size: 3rem;
-        color: rgb(127, 111, 243);
-    }
-    .two {
-        font-family: "monteserrat", sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        text-transform: uppercase;
-        color: rgb(127, 111, 243);
-    }
-    .socials{
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        gap: 1rem;
-        width: 5rem;
-        padding: 0rem;
-    }
-    .socials img {
-        width: 30px;
-        height: 30px;
-    }
-    .socials img:hover {
-        transform: translateX(-5px);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- CSS -->
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap');
-* {
-    box-sizing: border-box;
-    padding: 0;
-    transition: all 0.3s ease 0s;
-    scroll-behavior: smooth;
-    overflow: hidden;
-}
-a, button {
-    cursor: pointer;
-    text-decoration: none;
-}
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: black;
-}
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -20;
-}
-/* HAMBURGER BUTTON STYLES */
-.hamburgerMenu {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.bar {
-    width: 100%;
-    height: 3px;
-    background-color: #c5c4c4;
-    transition: transform 0.3s, opacity 0.3s;
-}
-/* Initial state (hamburger) */
-#bar1 {
-    transform: none;
-}
-#bar2 {
-    opacity: 1;
-}
-#bar3 {
-    transform: none;
-}
-/* Final state (X) */
-.hamburgerMenu.active #bar1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.hamburgerMenu.active #bar2 {
-    opacity: 0;
-}
-.hamburgerMenu.active #bar3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-/* Navigation Bar Styling */
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 15%;
-    height: 100vh;
-    padding: 10px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
-    z-index: 50;
-}
-.logo {
-    top: 1;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    padding: 5px;
-}
-.title h1 {
-    font-family: "lobster two", sans-serif;
-    font-weight: 500;
-    font-size: 60px;
-    text-align: center;
-    color: white;
-    margin: 0 0 0 0;
-}
-.title h3 {
-    font-family: "montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
-    color: rgb(127, 111, 243);
-    margin: 0 0 80px 0;
-}
-.profilePicture img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.navLinks {
-    width: 100%;
-}
-.navLinks li {
-    list-style: none;
-    display: inline-block;
-    justify-content: center;
-    width: 70%;
     text-align: left;
-    padding: 10px 0;
-    margin: 0 0 0 35px;
-    border-top: 1px solid rgb(127, 111, 243);
-}
-.navLinks li:last-child {
-    border-bottom: 1px solid rgb(127, 111, 243);
-}
-.navLinks li > a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 14px;
     color: white;
-    padding: 10px;
 }
-.navLinks li > a:hover, :active {
-    color: rgb(127, 111, 243);
-}
-/* MAIN SECTION */
-pre {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-family: Consolas, monospace;
-    font-size: 12px;
-    padding: 10px 60px;
-    border-radius: 2%;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
-}
-.one {
-    font-family: "lobster two", sans-serif;
-    font-weight: 500;
-    font-size: 60px;
-    text-align: right;
-    color: rgb(127, 111, 243);
-    width: fit-content;
-}
-.two {
-    font-family: "monteserrat", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    text-align: right;
-    text-transform: uppercase;
-    color: rgb(127, 111, 243);
-    margin: 0 0 0 -100px;
-    width: fit-content;
-}
-.socialIcons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+.about-two-two{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+
 }
-.socialIcons img {
-    width: 30px;
-    height: 30px;
+.about-two-two>h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight:lighter;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    width: 50%;
 }
-.socialIcons img:hover {
-    transform: translateX(-5px);
+.bold{
+    color: rgb(127, 111, 243);
 }
-/* MEDIA QUERY FOR MOBILE DEVICES */
-@media (max-width: 768px) {
-    /* Show the header menu on mobile */
-    .headerHidden {
-        display: block;
-        width: 80%;
-    }
-    .hamburgerMenu {
-        display: block;
-        position: fixed;
-        top: 20px;
-        left: 10px;
-        z-index: 100;
-    }
-    .hamburgerMenu.active #bar1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .hamburgerMenu.active #bar2 {
-        opacity: 0;
-    }
-    .hamburgerMenu.active #bar3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
+.about-me-cont{
+    margin: 0 0 0 250px;
+    background-color: black;
+    width: 83%;
+    height: fit-content;
+    color: white;
+}
+.left{
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+    line-height: 2;
+    width: 80%;
+    margin: 20px auto ;
+}
+.left::first-letter{
+    font-size: 30px;
+    color: rgb(127, 111, 243);
 }
 
-<!-- HTML -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/images/logo.png">
-    <link rel="stylesheet" href="landing.css">
-    <title>Benjamin Tom</title>
-</head>
-<body>
-    <!-- HAMBURGER BUTTON -->
-    <div class="hamburgerMenu" onclick="toggleNav()">
-        <div class="bar" id="bar1"></div>
-        <div class="bar" id="bar2"></div>
-        <div class="bar" id="bar3"></div>
-    </div>
 
-    <video src="video/background (2).mp4" autoplay muted loop></video>
-    <header class="headerHidden">
-        <a href="landing.html"><img class="logo" src="/images/logo.png" alt="logo"></a>
-        <div class="title">
-            <h1>Tom</h1>
-            <h3>Web Developer</h3>
-        </div>
-        <div class="profilePicture">
-            <img src="/images/profile picture (1).jpg" alt="profile picture">
-        </div>
-        <nav>
-            <ul class="navLinks">
-                <li><a href="landing.html">Home</a></li>
-                <li><a href="about.html">Who Am I?</a></li>
-                <li><a href="projects.html">My Projects</a></li>
-                <li><a href="skills.html">My Skills</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- BODY OF LANDING PAGE -->
-    <section class="codes">
-        <pre><code>
-            &lt;html&gt;
-                &lt;body&gt;
-                    &lt;h1&gt;  
-                        &lt;span class="one"&gt;
-                            Hello World, 
-                            I'm Benjamin Tom
-                        &lt;/span&gt;
-                    &lt;/h1&gt;
-                    &lt;p&gt;
-                        &lt;span class="two"&gt;
-                            a Front End Developer
-                        &lt;/span&gt;
-                    &lt;/p&gt;
-                &lt;/body&gt;
-            &lt;/html&gt;
-        </code></pre>
-        <div class="socialIcons">
-            <a href="https://github.com/btom7447" target="_blank"><img src="images/github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank"><img src="images/linkedin (2).png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/benjamin.tom.71?mibextid=D4KYlr" target="_blank"><img src="images/facebook (2).png" alt="Facebook"></a>
-            <a href="https://instagram.com/benjamin_tom_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img src="images/instagram (4).png" alt="Instagram"></a>
-        </div>
-    </section>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let isOpen = false;
 
-            function toggleNav() {
-                const bar1 = document.getElementById("bar1");
-                const bar2 = document.getElementById("bar2");
-                const bar3 = document.getElementById("bar3");
-                const headerMenu = document.querySelector('.headerMenu');
-
-                isOpen = !isOpen;
-
-                if (isOpen) {
-                    // Show the X icon
-                    bar1.style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-                    bar2.style.opacity = '0';
-                    bar3.style.transform = 'rotate(45deg) translate(-5px, -6px)';
-
-                    headerMenu.style.left = '0';
-                } else {
-                    // Show the hamburger icon
-                    bar1.style.transform = 'none';
-                    bar2.style.opacity = '1';
-                    bar3.style.transform = 'none';
-
-                    headerMenu.style.left = '-250px';
-                }
-            }
-            toggleNav();
-        });
-    </script>
-</body>
-</html>

@@ -1,81 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap');
-*{
+* {
     /* outline: red solid 1px; */
     box-sizing: border-box;
     padding: 0;
     transition: all 0.3s ease 0s;
-    scroll-behavior: smooth;
 }
-a, button{
+a {
     cursor: pointer;
     text-decoration: none;
 }
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    
 }
-.hamburger-menu {
+.hamburgerMenu {
     display: none;
     cursor: pointer;
 }
 .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #7f6ff3;
     margin: 6px 0;
 }
-
-
-                /* NAVIGATION BAR */
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+/* HEADER */
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 15%;
     height: 100vh;
-    padding: 10px;
+    padding: 2rem;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
 }
-.logo{
+.logo {
     top: 1;
     width: 50px;
     height: 50px;
     object-fit: cover;
     padding: 5px;
+    display: block;
+    margin: auto;
 }
-.title>h1{
+.title h1 {
     font-family: "lobster two", sans-serif;
     font-weight: 500;
     font-size: 60px;
     text-align: center;
-    color: white;
+    color: #ffffff;
     margin: 0 0 0 0;
 }
-.title>h3{
+.title h3 {
     font-family: "montserrat", sans-serif;
     font-weight: 200;
     font-size: 15px;
-    color: rgb(127, 111, 243);
+    text-align: center;
+    color: #7f6ff3;
     margin: 0 0 80px 0;
 }
-.profile-picture img{
+.profilePicture img {
+    display: block;
+    margin: auto;
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
-.nav-links{
+/* NAVIGATION */
+.navLinks {
     width: 100%;
 }
-.nav-links li{
+.navLinks li {
     list-style: none;
     display: inline-block;
     justify-content: center;
@@ -83,141 +80,130 @@ header{
     text-align: left;
     padding: 10px 0;
     margin: 0 0 0 35px;
-    border-top: 1px solid rgb(127, 111, 243);
+    border-top: 1px solid #7f6ff3;
 }
-.nav-links li:last-child{
-    border-bottom: 1px solid rgb(127, 111, 243);
+.navLinks li:last-child {
+    border-bottom: 1px solid #7f6ff3;
 }
-.nav-links li>a{
+.navLinks li > a {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: 14px;
-    color: white;
+    color: #ffffff;
     padding: 10px;
 }
-.nav-links li>a:hover, :active{
-    color: rgb(127, 111, 243);
+.navLinks li > a:hover, :active {
+    color: #7f6ff3;
 }
-
-
-            /* body */
-.about-me{
-    margin: 0 0 0 250px;
-    background-color: black;
-    width: 83%;
+/* body */
+.aboutMe{
+    background-color: #000000;
     height: fit-content;
-    
+    width: calc(100vw - 15%);
+    padding: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-.about-me>h3{
+.aboutMe h3{
     font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: lighter;
+    font-size: 1rem;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
-.about-me>h1{
+.aboutMe h1{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 3rem;
     text-align: center;
-    color: white;
-    margin-top: -20px;
+    color: #ffffff;
+    width: fit-content;
     margin: auto;
-    width: fit-content;
-    border-bottom: 2px solid rgb(127, 111, 243);
+    border-bottom: 2px solid #7f6ff3;
 }
-.about{
-    padding-top: 50px;
-    width: fit-content;
-    background-color: transparent;
+.aboutMeContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-   
+    gap: 1rem;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
 }
-.about-one>img{
-    width: 450px;
-    height: 450px;
+.myPicture{
+    width: 40%;
+    height: 30rem;
+}
+.myPicture img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin: 0 0 0 -50px
 }
-.about-two{
+.bio{
+    width: 50%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    margin: auto;
 }
-
-.about-two-one{
+.firstBio{
     width: 100%;
-    margin: 0 0 0 0;
-    border-bottom: 2px solid rgb(127, 111, 243);
-}
-.about-two-one>p{
-    font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
-    font-size: 15px;
-    text-align: left;
-    color: white;
-    line-height: 2;
-}
-.about-two-one>h4{
-    font-family: "Montserrat", sans-serif;
-    font-weight:lighter;
-    font-size: 20px;
-    text-align: left;
-    color: rgb(127, 111, 243);
-}
-.about-two-one>h2{
-    font-family: "lobster two", sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    text-align: left;
-    color: white;
-}
-.about-two-two{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0px;
-
-}
-.about-two-two>h4{
-    font-family: "Montserrat", sans-serif;
-    font-weight:lighter;
-    font-size: 15px;
-    text-align: left;
-    color: white;
-    width: 50%;
-}
-.bold{
-    color: rgb(127, 111, 243);
-}
-.about-me-cont{
-    margin: 0 0 0 250px;
-    background-color: black;
-    width: 83%;
     height: fit-content;
-    color: white;
-}
-.left{
+    border-bottom: 2px solid #7f6ff3;
+    /* TEXT EDIT */
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: justify;
     color: white;
     line-height: 2;
-    width: 80%;
-    margin: 20px auto ;
+    text-indent: 20px;
 }
-.left::first-letter{
-    font-size: 30px;
-    color: rgb(127, 111, 243);
+.firstBio h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-align: left;
+    color: #7f6ff3;
 }
-
-.social-icons {
+.firstBio h2{
+    font-family: "lobster two", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: left;
+    color: #ffffff;
+    
+}
+.secondBio{
+    border-bottom: 2px solid #7f6ff3;
+}
+.secondBio h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight:lighter;
+    font-size: 0.7rem;
+    text-align: left;
+    color: #ffffff;
+    width: 50%;
+    
+}
+.bold{
+    color: #7f6ff3;
+    margin-right: 10px;
+}
+.bioCont{
+    padding: 0rem 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: white;
+    line-height: 2;
+    text-indent: 20px;
+}
+/* SOCIAL ICONS */
+.socials{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -226,61 +212,222 @@ header{
     align-items: center;
     justify-content: center;
     margin: auto;
-    gap: 10px;
-  }
-.social-icons img {
+    gap: 1rem;
+    width: 5rem;
+    padding: 0rem;
+}
+.socials img {
     width: 30px;
     height: 30px;
-  }
-.social-icons img:hover{
+}
+.socials img:hover {
     transform: translateX(-5px);
 }
 
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block; 
-        top: 0;
-        left: 0;
-        position: fixed;
-        padding: 10px;
-        height: 100%;
-        width: 8%;
-        background-color: black;
-        box-shadow: 0 0 10px rgb(255, 255, 255);
-
+/* MEDIA QUERY */
+/*319px - 480px - MOBILE DEVICES*/
+@media (min-width: 319px) and (max-width: 480px) {
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px; 
+        z-index: 12; 
     }
-    .hamburger-menu.active + header {
+    .hamburgerMenu::before, .hamburgerMenu::after {
+        width: 20px;
+    }
+    .hamburgerMenu:active .header{
         display: block;
     }
-    header{
+    /* NAVIGATION BAR */
+    header {
         display: none;
-        width: 30%;
-    }
-    
-                /* body */
-    .about-me{
-        margin: auto;
-        height: fit-content;
-        
-    }
-    .about-one>img{
-        width: 450px;
-        height: 250px;
-        margin: auto;
-    }
-    .about-two{
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 80%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #000000;
+        box-shadow: 0 0 10px #7f6ff3;
+        z-index: 10;
+    }
+    .logo {
+        top: 1;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        padding: 5px;
+    }
+    .title h1 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .title h3 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 1rem;
+        color: #7f6ff3;
+        margin: 0 0 2rem 0;
+    }
+    .profilePicture img {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .navLinks {
+        width: 100%;
+    }
+    .navLinks li {
+        list-style: none;
+        display: inline-block;
+        justify-content: center;
+        width: 70%;
+        text-align: left;
+        padding: 10px 0;
+        margin: 0 0 0 35px;
+        border-top: 1px solid #7f6ff3;
+    }
+    .navLinks li:last-child {
+        border-bottom: 1px solid #7f6ff3;
+    }
+    .navLinks li > a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 0.7rem;
+        color: #ffffff;
+        padding: 10px;
+    }
+    .navLinks li > a:hover, :active {
+        color: #7f6ff3;
+    }
+    /* body */
+    .aboutMe{
+        background-color: #000000;
+        height: fit-content;
+        width: 100vw;
+        padding: 1rem;
+    }
+    .aboutMe h3{
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .aboutMe h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        width: fit-content;
+        margin: auto;
+        border-bottom: 2px solid #7f6ff3;
+    }
+    .aboutMeContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+    }
+    .myPicture{
+        width: 100%;
+        height: 15rem;
+    }
+    .myPicture img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .bio{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
         margin: auto;
     }
-    .about-two-one>p{
+    .firstBio{
+        width: 100%;
+        height: fit-content;
+        border-bottom: 2px solid #7f6ff3;
+        /* TEXT EDIT */
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.7rem;
         text-align: justify;
+        color: white;
         line-height: 1.5;
+        text-indent: 20px;
     }
-    .about-me-cont{
+    .firstBio h4{
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        text-align: left;
+        color: #7f6ff3;
+    }
+    .firstBio h2{
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        text-align: left;
+        color: #ffffff;
+    }
+    .secondBio{
+        border-bottom: 2px solid #7f6ff3;
+    }
+    .secondBio h4{
+        font-family: "Montserrat", sans-serif;
+        font-weight:lighter;
+        font-size: 0.7rem;
+        text-align: left;
+        color: #ffffff;
+        width: 100%;
+    }
+    .bold{
+        color: #7f6ff3;
+        margin-right: 10px;
+    }
+    .bioCont{
+        padding: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.7rem;
+        text-align: justify;
+        color: white;
+        line-height: 1.5;
+        text-indent: 20px;
+        margin-bottom: 4rem;
+    }
+    /* SOCIAL ICONS */
+    .socials{
+        position: fixed;
+        bottom: 20px;
+        right: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         margin: auto;
+        gap: 1rem;
+        width: 5rem;
+        padding: 0rem;
     }
-    .left::first-letter{
-        font-size: 30px;
-        color: rgb(127, 111, 243);
+    .socials img {
+        width: 30px;
+        height: 30px;
     }
-} 
+    .socials img:hover {
+        transform: none;
+    }
+}

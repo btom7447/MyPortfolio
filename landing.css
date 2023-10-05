@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap');
-* {
-    /* outline: red solid 1px; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+*{ 
     box-sizing: border-box;
     padding: 0;
     transition: all 0.3s ease 0s;
@@ -15,13 +14,6 @@ body {
     margin: 0;
     padding: 0;
 }
-video {
-    margin: auto;
-    width: 99vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -20;
-}
 .hamburgerMenu {
     display: none;
     cursor: pointer;
@@ -29,23 +21,19 @@ video {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: rgb(127, 111, 243);
+    background-color: #7f6ff3;
     margin: 6px 0;
 }
-/* NAVIGATION BAR */
+/* HEADER */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     position: fixed;
     top: 0;
     left: 0;
     width: 15%;
     height: 100vh;
     padding: 2rem;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(127, 111, 243);
+    background-color: #000000;
+    box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
 }
 .logo {
@@ -54,28 +42,34 @@ header {
     height: 50px;
     object-fit: cover;
     padding: 5px;
+    display: block;
+    margin: auto;
 }
 .title h1 {
     font-family: "lobster two", sans-serif;
     font-weight: 500;
     font-size: 60px;
     text-align: center;
-    color: white;
+    color: #ffffff;
     margin: 0 0 0 0;
 }
 .title h3 {
     font-family: "montserrat", sans-serif;
     font-weight: 200;
     font-size: 15px;
-    color: rgb(127, 111, 243);
+    text-align: center;
+    color: #7f6ff3;
     margin: 0 0 80px 0;
 }
 .profilePicture img {
+    display: block;
+    margin: auto;
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
+/* NAVIGATION */
 .navLinks {
     width: 100%;
 }
@@ -87,36 +81,39 @@ header {
     text-align: left;
     padding: 10px 0;
     margin: 0 0 0 35px;
-    border-top: 1px solid rgb(127, 111, 243);
+    border-top: 1px solid #7f6ff3;
 }
 .navLinks li:last-child {
-    border-bottom: 1px solid rgb(127, 111, 243);
+    border-bottom: 1px solid #7f6ff3;
 }
-.navLinks li > a {
+.navLinks li  a {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: 14px;
-    color: white;
+    color: #ffffff;
     padding: 10px;
 }
 .navLinks li > a:hover, :active {
-    color: rgb(127, 111, 243);
+    color: #7f6ff3;
 }
-.video-container {
+/* VIDEO BACKGROUND */
+.videoContainer {
     margin: auto;
     padding: 5rem;
     width: 100vw;
     height: 100vh;
     position: relative;
 }
-.video-container video {
+.videoContainer video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -20;
 }
+/* CODE SNIPPET  */
 .codes {
     margin: auto;
     width: 60%;
@@ -125,23 +122,24 @@ header {
     font-size: 1rem;
     padding: 0.5rem;
     border-radius: 2%;
-    color: white;
+    color: #ffffff;
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 10px rgb(127, 111, 243);
+    box-shadow: 0 0 10px #7f6ff3;
 }
-.one {
+.codes .one {
     font-family: "lobster two", sans-serif;
     font-weight: 500;
     font-size: 3rem;
-    color: rgb(127, 111, 243);
+    color: #7f6ff3;
 }
-.two {
+.codes .two {
     font-family: "monteserrat", sans-serif;
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
-    color: rgb(127, 111, 243);
+    color: #7f6ff3;
 }
+/* SOCIAL ICONS */
 .socials{
     position: fixed;
     bottom: 20px;
@@ -162,8 +160,10 @@ header {
 .socials img:hover {
     transform: translateX(-5px);
 }
-/* Media query for mobile devices */
-@media (max-width: 768px) {
+
+/* MEDIA QUERY */
+/*319px - 480px - MOBILE DEVICES*/
+@media (min-width: 319px) and (max-width: 480px) {
     .hamburgerMenu {
         display: block;
         position: fixed;
@@ -175,18 +175,19 @@ header {
         width: 20px;
     }
     .hamburgerMenu:active .header{
-        display: none;
+        display: block;
     }
     /* NAVIGATION BAR */
     header {
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 80%;
         height: 100vh;
         padding: 2rem;
-        background-color: rgb(0, 0, 0);
-        box-shadow: 0 0 10px rgb(127, 111, 243);
+        background-color: #000000;
+        box-shadow: 0 0 10px #7f6ff3;
         z-index: 10;
     }
     .logo {
@@ -201,13 +202,13 @@ header {
         font-weight: 500;
         font-size: 3rem;
         text-align: center;
-        color: white;
+        color: #ffffff;
     }
     .title h3 {
         font-family: "montserrat", sans-serif;
         font-weight: 200;
         font-size: 1rem;
-        color: rgb(127, 111, 243);
+        color: #7f6ff3;
         margin: 0 0 2rem 0;
     }
     .profilePicture img {
@@ -227,66 +228,75 @@ header {
         text-align: left;
         padding: 10px 0;
         margin: 0 0 0 35px;
-        border-top: 1px solid rgb(127, 111, 243);
+        border-top: 1px solid #7f6ff3;
     }
     .navLinks li:last-child {
-        border-bottom: 1px solid rgb(127, 111, 243);
+        border-bottom: 1px solid #7f6ff3;
     }
     .navLinks li > a {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
         font-size: 0.7rem;
-        color: white;
+        color: #ffffff;
         padding: 10px;
     }
     .navLinks li > a:hover, :active {
-        color: rgb(127, 111, 243);
+        color: #7f6ff3;
     }
     /* BODY */
-    .video-container {
+    .videoContainer {
         margin: auto;
-        padding: 0rem;
-        width: 100vw;
+        width: 100vw; 
         height: 100vh;
-        position: relative;
+        overflow: hidden; 
+        background-color: #000000;
+        z-index: -2;
     }
-    .video-container video {
+    .videoContainer video {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
         width: 100%;
-        height: 100%;
+        height: 50%;
+        max-height: 100%; 
         object-fit: cover;
+        z-index: -1; 
     }
+    /* CODE SNIPPET */
     .codes {
-        margin: auto;
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
         width: 80%;
         height: fit-content;
         font-family: "Consolas", "monospace";
-        font-size: 0.7rem;
-        padding: 0rem;
+        font-size: 0.5rem;
+        padding: 0;
         border-radius: 2%;
-        color: white;
+        color: #ffffff;
         background-color: rgba(0, 0, 0, 0.8);
-        box-shadow: 0 0 10px rgb(127, 111, 243);
+        box-shadow: 0 0 10px #7f6ff3;
     }
     .one {
         font-family: "lobster two", sans-serif;
         font-weight: 500;
-        font-size: 2rem;
-        color: rgb(127, 111, 243);
+        font-size: 1rem;
+        color: #7f6ff3;
     }
     .two {
         font-family: "monteserrat", sans-serif;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 0.5rem;
         text-transform: uppercase;
-        color: rgb(127, 111, 243);
+        color: #7f6ff3;
     }
+    /* SOCIAL ICONS */
     .socials{
         position: fixed;
-        bottom: 20px;
-        right: 0;
+        bottom: 19%;
+        right: -1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -301,6 +311,170 @@ header {
         height: 20px;
     }
     .socials img:hover {
-        transform: translateX(-5px);
+        transform: none;
+    }
+}
+/* 481PX - 1200PX - IPADS & TABETS */
+@media (min-width: 481px) and (max-width: 1200px) {
+    /* HEADER */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #000000;
+        box-shadow: 0 0 10px #7f6ff3;
+        z-index: 10;
+    }
+    .logo {
+        top: 1;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        padding: 5px;
+        display: block;
+        margin: auto;
+    }
+    .title h1 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 60px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 0 0 0;
+    }
+    .title h3 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+        text-align: center;
+        color: #7f6ff3;
+        margin: 0 0 80px 0;
+    }
+    .profilePicture img {
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    /* NAVIGATION */
+    .navLinks {
+        width: 100%;
+    }
+    .navLinks li {
+        list-style: none;
+        display: inline-block;
+        justify-content: center;
+        width: 70%;
+        text-align: left;
+        padding: 10px 0;
+        margin: 0 0 0 35px;
+        border-top: 1px solid #7f6ff3;
+    }
+    .navLinks li:last-child {
+        border-bottom: 1px solid #7f6ff3;
+    }
+    .navLinks li > a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: #ffffff;
+        padding: 10px;
+    }
+    .navLinks li > a:hover, :active {
+        color: #7f6ff3;
+    }
+    /* VIDEO BACKGROUND */
+    .videoContainer {
+        margin: auto;
+        padding: 5rem;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .videoContainer video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -20;
+    }
+    /* CODE SNIPPET  */
+    .videoContainer {
+        margin: auto;
+        width: 100vw; 
+        height: 100vh;
+        overflow: hidden; 
+        background-color: #000000;
+        z-index: -2;
+    }
+    .videoContainer video {
+        position: absolute;
+        top: 50%; 
+        left: 65%; 
+        transform: translate(-50%, -50%); 
+        width: 100%;
+        height: 50%;
+        max-height: 100%; 
+        object-fit: cover;
+        z-index: -1; 
+    }
+    .codes {
+        position: absolute;
+        top: 50%; 
+        left: 65%; 
+        transform: translate(-50%, -50%); 
+        width: 60%;
+        height: fit-content;
+        font-family: "Consolas", "monospace";
+        font-size: 1rem;
+        padding: 0;
+        border-radius: 2%;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 10px #7f6ff3;
+    }
+    .one {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 5px;
+        color: #7f6ff3;
+        position: relative;
+        top: 50%;
+        left: -7rem;
+    }
+    .two {
+        font-family: "monteserrat", sans-serif;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #7f6ff3;
+    }
+    /* SOCIAL ICONS */
+    .socials{
+        position: fixed;
+        bottom: 10%;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 0.5rem;
+        width: 5rem;
+        padding: 0rem;
+    }
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+    .socials img:hover {
+        transform: none;
     }
 }
