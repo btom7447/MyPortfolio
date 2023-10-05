@@ -145,7 +145,7 @@ header {
     bottom: 20px;
     right: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -153,9 +153,13 @@ header {
     width: 5rem;
     padding: 0rem;
 }
+.socials a{
+        width: 10rem;
+        height: fit-content;
+    }
 .socials img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 .socials img:hover {
     transform: translateX(-5px);
@@ -305,7 +309,7 @@ header {
         gap: 0.5rem;
         width: 10rem;
         padding: 0rem;
-        z-index: 11;
+        z-index: -1;
     }
     .socials a{
         width: 5rem;
@@ -333,6 +337,7 @@ header {
         background-color: #000000;
         box-shadow: 0 0 10px #7f6ff3;
         z-index: 10;
+        padding-top: 14rem;
     }
     .logo {
         top: 1;
@@ -426,7 +431,7 @@ header {
         left: 65%; 
         transform: translate(-50%, -50%); 
         width: 100%;
-        height: 50%;
+        height: 40%;
         max-height: 100%; 
         object-fit: cover;
         z-index: -1; 
@@ -446,39 +451,42 @@ header {
         background-color: rgba(0, 0, 0, 0.8);
         box-shadow: 0 0 10px #7f6ff3;
     }
-    .one {
+    .codes .one {
         font-family: "lobster two", sans-serif;
         font-weight: 500;
-        font-size: 5px;
+        font-size: 2.6rem;
         color: #7f6ff3;
-        position: relative;
-        top: 50%;
-        left: -7rem;
     }
-    .two {
+    .codes .two {
         font-family: "monteserrat", sans-serif;
         font-weight: 500;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-transform: uppercase;
         color: #7f6ff3;
     }
     /* SOCIAL ICONS */
     .socials{
         position: fixed;
-        bottom: 10%;
-        right: 1rem;
+        bottom: 2rem;
+        right: 2rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         margin: auto;
         gap: 0.5rem;
-        width: 5rem;
+        width: 10rem;
         padding: 0rem;
+        z-index: 11;
+    }
+    .socials a{
+        width: 5rem;
+        height: fit-content;
     }
     .socials img {
         width: 30px;
         height: 30px;
+        object-fit: cover;
     }
     .socials img:hover {
         transform: none;
