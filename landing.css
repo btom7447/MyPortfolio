@@ -181,7 +181,7 @@ header {
     header {
         position: fixed;
         top: 0;
-        left: -500;
+        left: 0;
         width: 80%;
         height: 100vh;
         padding: 2rem;
@@ -199,21 +199,20 @@ header {
     .title h1 {
         font-family: "lobster two", sans-serif;
         font-weight: 500;
-        font-size: 60px;
+        font-size: 3rem;
         text-align: center;
         color: white;
-        margin: 0 0 0 0;
     }
     .title h3 {
         font-family: "montserrat", sans-serif;
         font-weight: 200;
-        font-size: 15px;
+        font-size: 1rem;
         color: rgb(127, 111, 243);
-        margin: 0 0 80px 0;
+        margin: 0 0 2rem 0;
     }
     .profilePicture img {
-        width: 150px;
-        height: 150px;
+        width: 8rem;
+        height: 8rem;
         object-fit: cover;
         border-radius: 50%;
     }
@@ -236,7 +235,7 @@ header {
     .navLinks li > a {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
-        font-size: 14px;
+        font-size: 0.7rem;
         color: white;
         padding: 10px;
     }
