@@ -106,63 +106,49 @@ header {
     top: 0;
     right: 0;
 }
-.skills > p {
+.skills>p{
+    margin: 1rem auto;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: justify;
     color: white;
     line-height: 2;
-    margin: 20px auto;
-    width: 80%;
+    text-indent: 20px;
 }
-.skills > p::first-letter {
-    font-size: 30px;
-    color: rgb(127, 111, 243);
-}
-.skills > h3 {
+.skills>h3 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: lighter;
+    font-size: 1rem;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
-.skills > h1 {
+.skills>h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 3rem;
     text-align: center;
-    color: white;
-    margin-top: -20px;
-    margin: 20px auto;
+    color: #ffffff;
     width: fit-content;
-    border-bottom: 2px solid rgb(127, 111, 243);
+    margin: auto;
+    border-bottom: 2px solid #7f6ff3;
 }
-.skillSetGal {
-    width: 85%;
+.skillSet {
+    width: 80%;
     height: fit-content;
-    padding: 20px;
-    padding-top: 50px;
+    padding: 2rem;
     background-color: transparent;
     color: white;
     margin: auto;
 }
-.skillSetGal > ul {
-    width: 50%;
-    margin: -50px 0 0 110px;
-    padding: 30px;
-}
-.skillSetGal > ul > li {
+.skillSet ul li {
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: justify;
     color: white;
+    line-height: 1;
     margin-bottom: 15px;
-}
-
-.shade li, .shade {
-    color: rgb(127, 111, 243);
 }
 /* SOCIAL ICONS */
 .socials{
@@ -184,4 +170,313 @@ header {
 }
 .socials img:hover {
     transform: translateY(-5px);
+}
+/* MEDIA QUERY */
+/*319px - 480px - MOBILE DEVICES*/
+@media (min-width: 319px) and (max-width: 480px) {
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px; 
+        z-index: 12; 
+    }
+    .hamburgerMenu::before, .hamburgerMenu::after {
+        width: 20px;
+    }
+    .hamburgerMenu:active .header{
+        display: block;
+    }
+    /* NAVIGATION BAR */
+    header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #000000;
+        box-shadow: 0 0 10px #7f6ff3;
+        z-index: 10;
+    }
+    .logo {
+        top: 1;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        padding: 5px;
+    }
+    .title h1 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .title h3 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 1rem;
+        color: #7f6ff3;
+        margin: 0 0 2rem 0;
+    }
+    .profilePicture img {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .navLinks {
+        width: 100%;
+    }
+    .navLinks li {
+        list-style: none;
+        display: inline-block;
+        justify-content: center;
+        width: 70%;
+        text-align: left;
+        padding: 10px 0;
+        margin: 0 0 0 35px;
+        border-top: 1px solid #7f6ff3;
+    }
+    .navLinks li:last-child {
+        border-bottom: 1px solid #7f6ff3;
+    }
+    .navLinks li > a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 0.7rem;
+        color: #ffffff;
+        padding: 10px;
+    }
+    .navLinks li > a:hover, :active {
+        color: #7f6ff3;
+    }
+    /* body */
+    .skills {
+        background-color: #000000;
+        height: fit-content;
+        width: 100vw;
+        padding: 1rem;
+    }
+    .skills>p{
+        margin: 1rem auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.6rem;
+        text-align: justify;
+        color: white;
+        line-height: 2;
+        text-indent: 20px;
+    }
+    .skills>h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .skills>h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        width: fit-content;
+        margin: auto;
+        border-bottom: 2px solid #7f6ff3;
+    }
+    .skillSet {
+        width: 80%;
+        height: fit-content;
+        padding: 1rem;
+        background-color: transparent;
+        color: white;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    .skillSet ul li {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.6rem;
+        text-align: justify;
+        color: white;
+        line-height: 1;
+        margin-bottom: 15px;
+    }   
+    /* SOCIAL ICONS */
+    .socials{
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 0.5rem;
+        width: 10rem;
+        padding: 0rem;
+        z-index: 0;
+    }
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+    .socials img:hover {
+        transform: none;
+    }
+}
+/* 481PX - 1200PX - IPADS & TABETS */
+@media (min-width: 481px) and (max-width: 1200px) {
+    /* HEADER */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #000000;
+        box-shadow: 0 0 10px #7f6ff3;
+        z-index: 10;
+        padding-top: 12rem;
+    }
+    .logo {
+        top: 1;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        padding: 5px;
+        display: block;
+        margin: auto;
+    }
+    .title h1 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 60px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 0 0 0;
+    }
+    .title h3 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+        text-align: center;
+        color: #7f6ff3;
+        margin: 0 0 80px 0;
+    }
+    .profilePicture img {
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    /* NAVIGATION */
+    .navLinks {
+        width: 100%;
+    }
+    .navLinks li {
+        list-style: none;
+        display: inline-block;
+        justify-content: center;
+        width: 70%;
+        text-align: left;
+        padding: 10px 0;
+        margin: 0 0 0 35px;
+        border-top: 1px solid #7f6ff3;
+    }
+    .navLinks li:last-child {
+        border-bottom: 1px solid #7f6ff3;
+    }
+    .navLinks li > a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: #ffffff;
+        padding: 10px;
+    }
+    .navLinks li > a:hover, :active {
+        color: #7f6ff3;
+    }
+    /* body */
+    .skills {
+        background-color: #000000;
+        height: 100vh;
+        width: calc(100vw - 30%);
+        padding: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .skills>p{
+        margin: 1rem auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: white;
+        line-height: 2;
+        text-indent: 20px;
+    }
+    .skills>h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .skills>h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        width: fit-content;
+        margin: auto;
+        border-bottom: 2px solid #7f6ff3;
+    }
+    .skillSet {
+        width: 80%;
+        height: fit-content;
+        padding: 1rem;
+        background-color: transparent;
+        color: white;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    .skillSet ul li {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: white;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+    /* SOCIAL ICONS */
+    .socials{
+        position: fixed;
+        bottom: 20px;
+        right: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 1rem;
+        width: 5rem;
+        padding: 0rem;
+    }
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+    .socials img:hover {
+        transform: none;
+    }
 }
