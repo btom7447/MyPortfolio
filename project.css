@@ -336,7 +336,7 @@ header {
         background-color: #25213f; 
         padding: 1rem; 
         width: 90%; 
-        height: 20rem;
+        height: fit-content;
         border-radius: 2%;
     }
     .projectItem h2 {
@@ -526,7 +526,7 @@ header {
         background-color: #25213f; 
         padding: 1rem; 
         width: 90%; 
-        height: 24rem;
+        height: fit-content;
         border-radius: 2%;
     }
     .projectItem h2 {
