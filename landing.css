@@ -123,7 +123,7 @@ header {
     padding: 0.5rem;
     border-radius: 2%;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px #7f6ff3;
 }
 .codes .one {
@@ -276,7 +276,7 @@ header {
         padding: 0;
         border-radius: 2%;
         color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.2);
         box-shadow: 0 0 10px #7f6ff3;
     }
     .codes .one {
@@ -444,7 +444,7 @@ header {
         padding: 0;
         border-radius: 2%;
         color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.2);
         box-shadow: 0 0 10px #7f6ff3;
     }
     .codes .one {
