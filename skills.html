@@ -4,37 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Website Icon" type="png" href="/images/logo.png">
-    <link rel="stylesheet" href="skills.css">
-    <title>Benjamin Tom</title>
+    <link rel="stylesheet" href="skills.css+">
+    <title>My Skills</title>
 </head>
 <body>
-    <script>
-        function toggleNav() {
-        var hamburger = document.querySelector('.hamburger-menu');
-        var header = document.querySelector('header');
-        hamburger.classList.toggle('active');
-        header.classList.toggle('active');
-        }                  
-    </script>
-
-    <!-- Hamburger button -->
-    <div class="hamburger-menu" onclick="toggleNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <!-- HAMBURGER BUTTON -->
+    <div class="hamburgerMenu" onclick="toggleNav()">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
     </div>
-    <header>
-        <a href="landing.html"><img class="logo" src="/images/logo.png" alt="logo"></a>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
         <div class="title">
             <h1>Tom</h1>
             <h3>Web Developer</h3>
         </div>
-        <div class="profile-picture">
-            <img src="/images/profile picture (1).jpg" alt="profile picture">
+        <div class="profilePicture">
+            <img src="images/profile picture (1).jpg" alt="profile picture">
         </div>
+        <!-- NAVIGATION -->
         <nav>
-            <ul class="nav-links">
-                <li><a href="landing.html">Home</a></li>
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Who Am I?</a></li>
                 <li><a href="projects.html">My Projects</a></li>
                 <li><a href="skills.html">My Skills</a></li>
@@ -42,6 +35,7 @@
             </ul>
         </nav>
     </header>
+    <!-- BODY -->
 
     <section class="skills">
         <h3>Why I am perfect for you</h3>
@@ -72,14 +66,51 @@
             </ul>
         </div>
     </section>
-
-
-
-    <div class="social-icons">
+    <!-- SOCIAL ICONS -->
+    <section class="socials">
         <a href="https://github.com/btom7447" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         <a href="https://www.linkedin.com/in/benjamin-tom-1820b9240/" target="_blank"><img src="images/linkedin (2).png" alt="LinkedIn"></a>
         <a href="https://www.facebook.com/benjamin.tom.71?mibextid=D4KYlr" target="_blank"><img src="images/facebook (2).png" alt="Facebook"></a>
         <a href="https://instagram.com/benjamin_tom_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img src="images/instagram (4).png" alt="Instagram"></a>
-    </div>
+    </section>
+    <!-- JAVASCRIPT CODES -->
+    <script>
+        let isOpen = false;
+
+        function initNav() {
+            const header = document.querySelector('.header');
+            if (window.innerWidth <= 480) {     // DISPLAY OFF 
+                header.style.display = 'none'; 
+            }
+        }
+
+        function toggleNav() {
+            isOpen = !isOpen;
+            const bar1 = document.getElementById("bar1");
+            const bar2 = document.getElementById("bar2");
+            const bar3 = document.getElementById("bar3");
+            const header = document.querySelector('.header');
+
+            if (isOpen) {
+                bar1.style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+                bar2.style.opacity = '0';
+                bar3.style.transform = 'rotate(45deg) translate(-5px, -6px)';
+
+                if (window.innerWidth <= 480) {
+                    header.style.display = 'block'; // DISPLAY ON
+                }
+            } else {
+                bar1.style.transform = 'none';
+                bar2.style.opacity = '1';
+                bar3.style.transform = 'none';
+
+                if (window.innerWidth <= 480) {
+                    header.style.display = 'none'; // DISPLAY OFF
+                }
+            }
+        }
+
+        window.onload = initNav;
+    </script>
 </body>
 </html>
