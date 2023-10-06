@@ -1,93 +1,93 @@
-.aboutFlexBox{
-    padding-top: 50px;
-    width: fit-content;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-   
-}
-.first img{
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    margin: 0 0 0 -50px
-}
-.second{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.about-two-one{
-    width: 100%;
-    margin: 0 0 0 0;
-    border-bottom: 2px solid rgb(127, 111, 243);
-}
-.about-two-one>p{
-    font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
-    font-size: 15px;
-    text-align: left;
-    color: white;
-    line-height: 2;
-}
-.about-two-one>h4{
-    font-family: "Montserrat", sans-serif;
-    font-weight:lighter;
-    font-size: 20px;
-    text-align: left;
-    color: rgb(127, 111, 243);
-}
-.about-two-one>h2{
-    font-family: "lobster two", sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    text-align: left;
-    color: white;
-}
-.about-two-two{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0px;
-
-}
-.about-two-two>h4{
-    font-family: "Montserrat", sans-serif;
-    font-weight:lighter;
-    font-size: 15px;
-    text-align: left;
-    color: white;
-    width: 50%;
-}
-.bold{
-    color: rgb(127, 111, 243);
-}
-.about-me-cont{
-    margin: 0 0 0 250px;
-    background-color: black;
-    width: 83%;
-    height: fit-content;
-    color: white;
-}
-.left{
-    font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
-    font-size: 15px;
-    text-align: justify;
-    color: white;
-    line-height: 2;
-    width: 80%;
-    margin: 20px auto ;
-}
-.left::first-letter{
-    font-size: 30px;
-    color: rgb(127, 111, 243);
-}
+<section class="project-thumbnail">
+        <div class="thumbnail-gal">
+            <div class="card">
+                <img src="images/project porfolio.png" alt="">
+                <div class="info">
+                    <h1 class="black">First Hello World</h1>
+                    <p class="black">
+                        Where it all began, my very first foray into web
+                        deveopment. With a few lines of HTML & CSS, I started my 
+                        journey in the world of web creation. 
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <video src="video/Limnah portfolio.mp4" autoplay muted loop></video>
+                <div class="info">
+                    <h1>Limnah Restaurant</h1>
+                    <p>
+                        Savor my restaurant website side project, where pixels and code blend seamlessly. 
+                        Experience culinary wonders, intuitive design, and a passion for creating digital 
+                        dining experiences. Join me in this condensed journey from idea to a tantalizing online escape.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <video src="video/Abkon Energy Portfolio.mp4" muted loop autoplay></video>
+                <div class="info">
+                    <h1>Abkon Energy</h1>
+                    <p>
+                        Immerse yourself in my cloned solar company website project. 
+                        Witness how I recreated a dynamic digital space for a sustainable future. 
+                        Explore the convergence of clean energy and captivating design. 
+                        Join me in this journey of repurposing code to illuminate a brighter tomorrow.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+               <video src="video/portfolio.mp4" loop autoplay muted></video>
+                <div class="info">
+                    <h1>My Website</h1>
+                    <p>
+                        A showcase of my diverse web development expertise. From code to creativity, 
+                        this digital realm encapsulates my journey. Experience the fusion of design, 
+                        interactivity, and skillful execution. Join me as I unveil a tapestry of projects 
+                        that define my path in the world of web development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail-text">
+            <p>Discover the full scope of these projects by exploring my <a href="https://github.com/btom7447?tab=repositories" target="_blank">GitHub Respository.</a> 
+                Dive into the code, design, and functionalities that power each thumbnail above. 
+                The link below offers an in-depth view of these projects, showcasing the intricacies 
+                and innovations behind every creation. Join me in unraveling the layers of web development 
+                excellence that reside within each repository.
+            </p>
+        </div>
+    </section>
 
 
+    <!-- BODY -->
+<section class="projects">
+    <h3>Explore my creations</h3>
+    <h1>My Projects</h1>
+    <p> Here, I've condensed my 3 months learning 
+        and progress into a series of projects that span from my very first line
+        of code as a novice to my most recent creations as an aspiring web developer.
+        From foundational HTML and CSS to dynamic JavaScript, each project is a snippet 
+        of my growth as a developer.</p>
 
+    <!-- Project List -->
+    <div class="projectList">
+        <!-- Project 1 -->
+        <div class="projectItem">
+            <h2>ProjectName1</h2>
+            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Technologies: HTML, CSS, JavaScript</p>
+            <p>GitHub: <a href="https://github.com/yourusername/project1" target="_blank">Link</a></p>
+            <p>Live Demo: <a href="https://yourwebsite.com/project1" target="_blank">Link</a></p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="projectItem">
+            <h2>ProjectName2</h2>
+            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Technologies: HTML, CSS, JavaScript</p>
+            <p>GitHub: <a href="https://github.com/yourusername/project2" target="_blank">Link</a></p>
+            <p>Live Demo: <a href="https://yourwebsite.com/project2" target="_blank">Link</a></p>
+        </div>
+
+        <!-- Add more projects here as needed -->
+    </div>
+</section>
