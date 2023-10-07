@@ -1,83 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap');
-*{
+* {
     /* outline: red solid 1px; */
     box-sizing: border-box;
     padding: 0;
     transition: all 0.3s ease 0s;
-    scroll-behavior: smooth;
 }
-a, button{
+a {
     cursor: pointer;
     text-decoration: none;
+    color: #f34c4f;
 }
-body{
-    position: absolute;
-    right: 0;
-    width: 85%;
+body {
     margin: 0;
     padding: 0;
-    background-color: black;
 }
-.hamburger-menu {
+.hamburgerMenu {
     display: none;
     cursor: pointer;
 }
 .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #7f6ff3;
     margin: 6px 0;
 }
-
-
-                /* NAVIGATION BAR */
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+/* HEADER */
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 15%;
     height: 100vh;
-    padding: 10px;
+    padding: 2rem;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
-    z-index: 50;
+    box-shadow: 0 0 10px #7f6ff3;
+    z-index: 10;
 }
-.logo{
+.logo {
     top: 1;
     width: 50px;
     height: 50px;
     object-fit: cover;
     padding: 5px;
+    display: block;
+    margin: auto;
 }
-.title h1{
+.title h1 {
     font-family: "lobster two", sans-serif;
     font-weight: 500;
     font-size: 60px;
     text-align: center;
-    color: white;
+    color: #ffffff;
     margin: 0 0 0 0;
 }
-.title h3{
+.title h3 {
     font-family: "montserrat", sans-serif;
     font-weight: 200;
     font-size: 15px;
-    color: rgb(127, 111, 243);
+    text-align: center;
+    color: #7f6ff3;
     margin: 0 0 80px 0;
 }
-.profile-picture img{
+.profilePicture img {
+    display: block;
+    margin: auto;
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
-.nav-links{
+/* NAVIGATION */
+.navLinks {
     width: 100%;
 }
-.nav-links li{
+.navLinks li {
     list-style: none;
     display: inline-block;
     justify-content: center;
@@ -85,199 +81,360 @@ header{
     text-align: left;
     padding: 10px 0;
     margin: 0 0 0 35px;
-    border-top: 1px solid rgb(127, 111, 243);
+    border-top: 1px solid #7f6ff3;
 }
-.nav-links li:last-child{
-    border-bottom: 1px solid rgb(127, 111, 243);
+.navLinks li:last-child {
+    border-bottom: 1px solid #7f6ff3;
 }
-.nav-links li>a{
+.navLinks li > a {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     font-size: 14px;
-    color: white;
+    color: #ffffff;
     padding: 10px;
 }
-.nav-links li>a:hover, :active{
-    color: rgb(127, 111, 243);
+.navLinks li > a:hover, :active {
+    color: #7f6ff3;
 }
 
-            /* body */
-.contact-me{
-    width: 85%;
-    height: fit-content;
-    padding: 20px;
-    padding-top: 50px;
-    background-color: transparent;
-    color: white;
-    margin: 30px auto;
-    margin-bottom: 20px;
+
+/* body */
+.contacts {
+    background-color: #000000;
+    height: 100vh;
+    width: calc(100vw - 15%);
+    padding: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contacts>p{
+    margin: 1rem auto;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 0.9rem;
     text-align: justify;
     color: white;
     line-height: 2;
+    text-indent: 20px;
 }
-.contact-me>h3{
+.contacts>h3 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: lighter;
+    font-size: 1rem;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
-.contact-me>h1{
+.contacts>h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 3rem;
     text-align: center;
-    color: white;
-    margin-top: -20px;
-    margin: 20px auto;
+    color: #ffffff;
     width: fit-content;
-    border-bottom: 2px solid rgb(127, 111, 243);
+    margin: auto;
+    border-bottom: 2px solid #7f6ff3;
 }
-.social-icons {
+
+
+
+/* SOCIAL ICONS */
+.socials{
+    position: fixed;
+    bottom: 3rem;
+    right: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
-    
-}
-.social-icons img {
-    width: 100px;
-    height: 100px;
-}
-.social-icons img:hover{
-    transform: scale(1.3);
-}
-
-.message{
+    justify-content: center;
     margin: auto;
-    margin-bottom: 50px;
-    width: 80%;
-    height: fit-content;
-    color: white;
-    padding: 10px;
+    gap: 1rem;
+    width: 5rem;
+    padding: 0rem;
 }
-.message>h1{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    color: white;
+.socials img {
+    width: 30px;
+    height: 30px;
 }
-.inputs{
-    margin: auto;
-    width: 90%;
-    height: fit-content;
-    padding: 20px;
-    gap: 20px;
-    border: 2px solid rgb(127, 111, 243);
+.socials img:hover {
+    transform: translateY(-5px);
 }
-input, textarea{
-    font-size: 15px;
-    font-family: montserrat;
-}
-input::placeholder{
-    font-size: 12px;
-    font-family: montserrat;
-    color: rgb(127, 111, 243);
-}
-textarea::placeholder{
-    font-size: 12px;
-    font-family: montserrat;
-    color: rgb(127, 111, 243);
-}
-#first-name, #last-name, #email, #phone-number{
-    width: 48%;
-    height: 50px;
-    margin: 0 0 10px 10px;
-    padding: 10px;
-}
-#subject{
-    display: block;
-    width: 97.5%;
-    height: 50px;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-#message{
-    display: block;
-    width: 97.5%;
-    height: 150px;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-.submit{
-    width: 180px;
-    height: 50px;
-    display: block;
-    margin: auto;
-    background-color: rgb(127, 111, 243);
-    color: white;
-    font-weight: 800;
-    border: none;
-    font-size: 12px;
-    font-family: montserrat;
-}
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block; 
+/* MEDIA QUERY */
+/*319px - 480px - MOBILE DEVICES*/
+@media (min-width: 319px) and (max-width: 480px) {
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px; 
+        z-index: 12; 
+    }
+    .hamburgerMenu::before, .hamburgerMenu::after {
+        width: 20px;
+    }
+    .hamburgerMenu:active .header{
+        display: block;
+    }
+    /* NAVIGATION BAR */
+    header {
+        display: none;
+        position: fixed;
         top: 0;
         left: 0;
-        position: fixed;
+        width: 80%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #000000;
+        box-shadow: 0 0 10px #7f6ff3;
+        z-index: 10;
+    }
+    .logo {
+        top: 1;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        padding: 5px;
+    }
+    .title h1 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .title h3 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 1rem;
+        color: #7f6ff3;
+        margin: 0 0 2rem 0;
+    }
+    .profilePicture img {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .navLinks {
+        width: 100%;
+    }
+    .navLinks li {
+        list-style: none;
+        display: inline-block;
+        justify-content: center;
+        width: 70%;
+        text-align: left;
+        padding: 10px 0;
+        margin: 0 0 0 35px;
+        border-top: 1px solid #7f6ff3;
+    }
+    .navLinks li:last-child {
+        border-bottom: 1px solid #7f6ff3;
+    }
+    .navLinks li > a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 0.7rem;
+        color: #ffffff;
         padding: 10px;
-        height: 100%;
-        width: 8%;
-        background-color: black;
-        box-shadow: 0 0 10px rgb(255, 255, 255);
-
     }
-    .hamburger-menu.active + header {
-        display: block;
+    .navLinks li > a:hover, :active {
+        color: #7f6ff3;
     }
-    header{
-        display: none;
-        width: 30%;
+    /* body */
+    .contacts {
+        background-color: #000000;
+        height: 100vh;
+        width: 100vw;
+        padding: 1rem;
     }
-    .message{
-        margin-bottom: 50px;
-        width: 90%;
-        height: fit-content;
+    .contacts>p{
+        margin: 1rem auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.6rem;
+        text-align: justify;
         color: white;
-        padding: 10px;
+        line-height: 2;
+        text-indent: 20px;
     }
-    .inputs{
+    .contacts>h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .contacts>h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        width: fit-content;
         margin: auto;
-        width: 90%;
-        height: fit-content;
-        padding: 20px;
-        gap: 20px;
-        border: 2px solid rgb(127, 111, 243);
+        border-bottom: 2px solid #7f6ff3;
     }
-    #first-name, #last-name, #email, #phone-number{
-        width: 47%;
+    
+    
+    
+    /* SOCIAL ICONS */
+    .socials{
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 0.5rem;
+        width: 10rem;
+        padding: 0rem;
+        z-index: 0;
+    }
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+    .socials img:hover {
+        transform: none;
+    }
+}
+/* 481PX - 1200PX - IPADS & TABETS */
+@media (min-width: 481px) and (max-width: 1200px) {
+    /* HEADER */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #000000;
+        box-shadow: 0 0 10px #7f6ff3;
+        z-index: 10;
+        padding-top: 12rem;
+    }
+    .logo {
+        top: 1;
+        width: 50px;
         height: 50px;
-        margin: 0 0 10px 9px;
+        object-fit: cover;
+        padding: 5px;
+        display: block;
+        margin: auto;
+    }
+    .title h1 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 60px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 0 0 0;
+    }
+    .title h3 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+        text-align: center;
+        color: #7f6ff3;
+        margin: 0 0 80px 0;
+    }
+    .profilePicture img {
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    /* NAVIGATION */
+    .navLinks {
+        width: 100%;
+    }
+    .navLinks li {
+        list-style: none;
+        display: inline-block;
+        justify-content: center;
+        width: 70%;
+        text-align: left;
+        padding: 10px 0;
+        margin: 0 0 0 35px;
+        border-top: 1px solid #7f6ff3;
+    }
+    .navLinks li:last-child {
+        border-bottom: 1px solid #7f6ff3;
+    }
+    .navLinks li > a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: #ffffff;
         padding: 10px;
     }
-    #subject{
-        display: block;
-        width: 97%;
-        height: 50px;
-        margin: auto;
-        margin-bottom: 10px;
-        padding: 10px;
+    .navLinks li > a:hover, :active {
+        color: #7f6ff3;
     }
-    #message{
-        display: block;
-        width: 97%;
-        height: 100px;
+    /* body */
+    .contacts {
+        background-color: #000000;
+        height: 100vh;
+        width: calc(100vw - 30%);
+        padding: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .contacts>p{
+        margin: 1rem auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: white;
+        line-height: 2;
+        text-indent: 20px;
+    }
+    .contacts>h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .contacts>h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        width: fit-content;
         margin: auto;
-        margin-bottom: 10px;
-        padding: 10px;
+        border-bottom: 2px solid #7f6ff3;
+    }
+    
+    
+
+    /* SOCIAL ICONS */
+    .socials{
+        position: fixed;
+        bottom: 20px;
+        right: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 1rem;
+        width: 5rem;
+        padding: 0rem;
+    }
+    .socials img {
+        width: 30px;
+        height: 30px;
+    }
+    .socials img:hover {
+        transform: none;
     }
 }
