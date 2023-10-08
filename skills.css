@@ -580,7 +580,7 @@ header {
     /* body */
     .skills {
         background-color: #000000;
-        height: 100vh;
+        height: fit-content;
         width: calc(100vw - 30%);
         padding: 3rem;
         position: absolute;
