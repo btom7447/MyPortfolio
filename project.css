@@ -32,7 +32,7 @@ header {
     width: 15%;
     height: 100vh;
     padding: 2rem;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
 }
@@ -166,7 +166,7 @@ header {
     font-weight: lighter;
     font-size: 0.6rem;
     text-align: justify;
-    color: white;
+    color: #ffffff;
     text-indent: 20px;
 }
 .projectItem:hover {
@@ -356,7 +356,7 @@ header {
         font-weight: lighter;
         font-size: 0.5rem;
         text-align: left;
-        color: white;
+        color: #ffffff;
         width: 100%;
     }
     .tech{
@@ -546,7 +546,7 @@ header {
         font-weight: lighter;
         font-size: 0.7rem;
         text-align: left;
-        color: white;
+        color: #ffffff;
         width: 100%;
     }
     .tech{

@@ -31,7 +31,7 @@ header {
     width: 15%;
     height: 100vh;
     padding: 2rem;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
 }
@@ -157,7 +157,7 @@ header {
     font-weight: lighter;
     font-size: 0.9rem;
     text-align: justify;
-    color: white;
+    color: #ffffff;
     line-height: 2;
     text-indent: 20px;
 }
@@ -196,7 +196,7 @@ header {
     font-weight: lighter;
     font-size: 0.9rem;
     text-align: justify;
-    color: white;
+    color: #ffffff;
     line-height: 2;
     text-indent: 20px;
 }
@@ -363,7 +363,7 @@ header {
         font-weight: lighter;
         font-size: 0.7rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 1.5;
         text-indent: 20px;
     }
@@ -402,7 +402,7 @@ header {
         font-weight: lighter;
         font-size: 0.7rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 1.5;
         text-indent: 20px;
         margin-bottom: 4rem;
@@ -566,7 +566,7 @@ header {
         font-weight: lighter;
         font-size: 0.8rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 1.5;
         text-indent: 20px;
     }
@@ -605,7 +605,7 @@ header {
         font-weight: lighter;
         font-size: 0.8rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 1.5;
         text-indent: 20px;
         margin-bottom: 2rem;

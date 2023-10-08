@@ -32,7 +32,7 @@ header {
     width: 15%;
     height: 100vh;
     padding: 2rem;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
 }
@@ -112,7 +112,7 @@ header {
     font-weight: lighter;
     font-size: 0.9rem;
     text-align: justify;
-    color: white;
+    color: #ffffff;
     line-height: 2;
     text-indent: 20px;
 }
@@ -138,7 +138,7 @@ header {
     height: fit-content;
     padding: 2rem;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     margin: auto;
 }
 .skillSet ul li {
@@ -146,9 +146,96 @@ header {
     font-weight: lighter;
     font-size: 0.9rem;
     text-align: justify;
-    color: white;
+    color: #ffffff;
     line-height: 1;
     margin-bottom: 15px;
+}
+/* CERTIFICATION */
+.certification{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    margin-bottom: 5rem;
+   
+}
+.certification>p{
+    margin: 1rem auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: #ffffff;
+    line-height: 2;
+    text-indent: 20px;
+}
+.certification>h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    width: fit-content;
+    margin: auto;
+    border-bottom: 2px solid #7f6ff3;
+}
+.projectList{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.certificationItem {
+    background-color: #25213f; 
+    padding: 1rem; 
+    width: 40%; 
+    height: fit-content;
+    border-radius: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    text-align: justify;
+    text-indent: 20px;
+}
+.certificationItem h2 {
+    font-family: "lobster two", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    margin: -0.5rem 0 -0.7rem 0;
+}
+.certificationItem h3{
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+.certificationItem p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 0.6rem;
+    text-align: justify;
+    color: #ffffff;
+    text-indent: 20px;
+}
+.certificationItem:hover {
+    transform: scale(1.03);
+}
+.certificationPreview {
+    max-width: 100%; 
+    overflow: hidden; 
+    margin-bottom: 10px;
+}
+.certificationPreview img,
+.certificationPreview video {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
 }
 /* SOCIAL ICONS */
 .socials{
@@ -266,7 +353,7 @@ header {
         font-weight: lighter;
         font-size: 0.6rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 2;
         text-indent: 20px;
     }
@@ -292,7 +379,7 @@ header {
         height: fit-content;
         padding: 1rem;
         background-color: transparent;
-        color: white;
+        color: #ffffff;
         margin: auto;
         margin-bottom: 5rem;
     }
@@ -301,10 +388,97 @@ header {
         font-weight: lighter;
         font-size: 0.6rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 1;
         margin-bottom: 15px;
     }   
+    /* CERTIFICATION */
+    .certification{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        margin-bottom: 5rem;
+    
+    }
+    .certification>p{
+        margin: 1rem auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.6rem;
+        text-align: justify;
+        color: #ffffff;
+        line-height: 2;
+        text-indent: 20px;
+    }
+    .certification>h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        width: fit-content;
+        margin: auto;
+        border-bottom: 2px solid #7f6ff3;
+    }
+    .certificationList{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .certificationItem {
+        background-color: #25213f; 
+        padding: 1rem; 
+        width: 100%; 
+        height: fit-content;
+        border-radius: 2%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.5rem;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    .certificationItem h2 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+        color: #ffffff;
+        margin: -0.5rem 0 0rem 0;
+    }
+    .certificationItem h3{
+        font-family: "montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 0.5rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .certificationItem p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.5rem;
+        text-align: justify;
+        color: #ffffff;
+        text-indent: 20px;
+    }
+    .certificationItem:hover {
+        transform: scale(1.03);
+    }
+    .certificationPreview {
+        max-width: 100%; 
+        overflow: hidden; 
+        margin-bottom: 10px;
+    }
+    .certificationPreview img,
+    .certificationPreview video {
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
+    }
     /* SOCIAL ICONS */
     .socials{
         position: fixed;
@@ -419,7 +593,7 @@ header {
         font-weight: lighter;
         font-size: 0.8rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 2;
         text-indent: 20px;
     }
@@ -445,7 +619,7 @@ header {
         height: fit-content;
         padding: 1rem;
         background-color: transparent;
-        color: white;
+        color: #ffffff;
         margin: auto;
         margin-bottom: 5rem;
     }
@@ -454,9 +628,96 @@ header {
         font-weight: lighter;
         font-size: 0.8rem;
         text-align: justify;
-        color: white;
+        color: #ffffff;
         line-height: 1;
         margin-bottom: 15px;
+    }
+    /* CERTIFICATION */
+    .certification{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        margin-bottom: 5rem;
+    
+    }
+    .certification>p{
+        margin: 1rem auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #ffffff;
+        line-height: 2;
+        text-indent: 20px;
+    }
+    .certification>h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        width: fit-content;
+        margin: auto;
+        border-bottom: 2px solid #7f6ff3;
+    }
+    .certificationList{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .certificationItem {
+        background-color: #25213f; 
+        padding: 1rem; 
+        width: 100%; 
+        height: fit-content;
+        border-radius: 2%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.6rem;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    .certificationItem h2 {
+        font-family: "lobster two", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #ffffff;
+        margin: -0.5rem 0 0rem 0;
+    }
+    .certificationItem h3{
+        font-family: "montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 0.5rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .certificationItem p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 0.6rem;
+        text-align: justify;
+        color: #ffffff;
+        text-indent: 20px;
+    }
+    .certificationItem:hover {
+        transform: scale(1.03);
+    }
+    .certificationPreview {
+        max-width: 100%; 
+        overflow: hidden; 
+        margin-bottom: 10px;
+    }
+    .certificationPreview img,
+    .certificationPreview video {
+        max-width: 100%; 
+        height: auto; 
+        display: block; 
     }
     /* SOCIAL ICONS */
     .socials{
