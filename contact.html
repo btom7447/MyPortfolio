@@ -35,6 +35,7 @@
             </ul>
         </nav>
     </header>
+    
     <!-- BODY -->
     <section class="contacts">
         <h3>Reach Out to Me</h3>
@@ -44,8 +45,29 @@
             or simply want to say hello. I'm always here to connect and engage with you. You can 
             reach out to me through various means, making it convenient for you to contact me
         </p>
-        
-        
+        <div class="formContainer">
+            <form id="contactForm" method="post" action="submit.php">
+                <div class="formGroup">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="formGroup">
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="email" id="emailAddress" name="emailAddress" required>
+                </div>
+                <div class="formGroup">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="formGroup">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="formGroup">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </section>
 
     <!-- SOCIAL ICONS -->
