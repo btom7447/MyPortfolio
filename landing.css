@@ -115,8 +115,11 @@ header {
 }
 /* CODE SNIPPET  */
 .codes {
+    position: absolute;
+    top: 20%; 
+    left: 25%; 
     margin: auto;
-    width: 60%;
+    width: 50%;
     height: fit-content;
     font-family: "Consolas", "monospace";
     font-size: 1rem;
