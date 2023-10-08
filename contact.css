@@ -509,18 +509,17 @@ button[type="submit"]:hover {
         width: 100%;
         height: fit-content;
         margin: auto;
-     }
-     #contactForm {
+    }
+    #contactForm {
         margin: 0 auto;
         padding: 1rem;
         background-color: #25213f;;
         border-radius: 5px;
-     }
-     .formGroup {
+    }
+    .formGroup {
         margin-bottom: 1rem;
-     }
-     
-     label {
+    }
+    label {
         font-weight: bold;
         display: block;
         margin-bottom: 1rem;
@@ -529,16 +528,16 @@ button[type="submit"]:hover {
         font-size: 0.9rem;
         text-align: justify;
         color: #ffffff;
-     }
-     input[type="text"], input[type="email"], textarea {
+    }
+    input[type="text"], input[type="email"], textarea {
         width: 100%;
         padding: 10px;
         border: 1px solid #ffffff;
         border-radius: 5px;
         background-color: #7f6ff3;
         color: #ffffff;
-     }
-     button[type="submit"] {
+    }
+    button[type="submit"] {
         display: block;
         margin: auto;
         background-color: #7f6ff3;
@@ -547,11 +546,11 @@ button[type="submit"]:hover {
         border: none;
         border-radius: 5px;
         cursor: pointer;
-     }
-     button[type="submit"]:hover {
+    }
+    button[type="submit"]:hover {
         background-color: #ffffff;
         color: #7f6ff3;
-     }
+    }
     /* SOCIAL ICONS */
     .socials{
         position: fixed;
