@@ -164,7 +164,7 @@ label {
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #7f6ff3;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     background-color: #7f6ff3;
     color: #ffffff;
@@ -350,7 +350,7 @@ button[type="submit"]:hover {
     input[type="text"], input[type="email"], textarea {
         width: 100%;
         padding: 10px;
-        border: 1px solid #7f6ff3;
+        border: 1px solid #ffffff;
         border-radius: 5px;
         background-color: #7f6ff3;
         color: #ffffff;
@@ -533,7 +533,7 @@ button[type="submit"]:hover {
      input[type="text"], input[type="email"], textarea {
         width: 100%;
         padding: 10px;
-        border: 1px solid #7f6ff3;
+        border: 1px solid #ffffff;
         border-radius: 5px;
         background-color: #7f6ff3;
         color: #ffffff;
