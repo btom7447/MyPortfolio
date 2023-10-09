@@ -165,8 +165,8 @@ header {
     transform: translateY(-5px);
 }
 /* MEDIA QUERY */
-/*319px - 480px - MOBILE DEVICES*/
-@media (min-width: 319px) and (max-width: 480px) {
+/*480px - MOBILE DEVICES*/
+@media (max-width: 480px) {
     .hamburgerMenu {
         display: block;
         position: fixed;
