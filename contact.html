@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Website Icon" type="png" href="/images/logo.png">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Contact Me</title>
 </head>
 <body>
@@ -49,22 +50,22 @@
             <form id="contactForm" method="post" action="submit.php">
                 <div class="formGroup">
                     <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
                 </div>
                 <div class="formGroup">
                     <label for="emailAddress">Email Address:</label>
-                    <input type="email" id="emailAddress" name="emailAddress" required>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="johndoe@gmail.com" required>
                 </div>
                 <div class="formGroup">
                     <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <input type="text" id="subject" name="subject" placeholder="I've got a job for you" required>
                 </div>
                 <div class="formGroup">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="blah blah blah...." required></textarea>
                 </div>
                 <div class="formGroup">
-                    <button type="submit">Submit</button>
+                    <button type="submit"class="btn btn-primary"><i class="fa fa-paper-plane"></i>  Submit</button>
                 </div>
             </form>
         </div>

@@ -100,7 +100,7 @@ header {
 /* body */
 .contacts {
     background-color: #000000;
-    height: fit-content;
+    height: 100vh;
     width: calc(100vw - 15%);
     padding: 5rem;
     position: absolute;
@@ -109,6 +109,7 @@ header {
     margin-bottom: 5rem;
 }
 .contacts>p{
+    width: 60%;
     margin: 1rem auto;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
@@ -137,7 +138,7 @@ header {
 }
 .formContainer{
    padding: 1rem;
-   width: 100%;
+   width: 70%;
    height: fit-content;
    margin: auto;
 }
@@ -166,8 +167,11 @@ input[type="text"], input[type="email"], textarea {
     padding: 10px;
     border: 1px solid #ffffff;
     border-radius: 5px;
-    background-color: #7f6ff3;
+    background-color: hsl(247, 85%, 69%);
     color: #ffffff;
+}
+input::placeholder, textarea::placeholder {
+    color: #ffffff8a;
 }
 button[type="submit"] {
     display: block;
@@ -290,11 +294,12 @@ button[type="submit"]:hover {
     /* body */
     .contacts {
         background-color: #000000;
-        height: fit-content;
+        height: 100vh;
         width: 100vw;
         padding: 1rem;
     }
     .contacts>p{
+        width: 90%;
         margin: 1rem auto;
         font-family: "Montserrat", sans-serif;
         font-weight: lighter;
@@ -478,6 +483,7 @@ button[type="submit"]:hover {
         right: 0;
     }
     .contacts>p{
+        width: 90%;
         margin: 1rem auto;
         font-family: "Montserrat", sans-serif;
         font-weight: lighter;
