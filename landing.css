@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
 *{ 
+    /* outline: red solid 2px; */
     box-sizing: border-box;
     padding: 0;
     transition: all 0.3s ease 0s;
@@ -13,6 +14,7 @@ a {
 body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 .hamburgerMenu {
     display: none;
@@ -29,9 +31,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 15%;
-    height: 100vh;
-    padding: 2rem;
+    width: 20%;
+    height: 100%;
+    padding: 1.5rem;
     background-color: #000000;
     box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
@@ -64,8 +66,8 @@ header {
 .profilePicture img {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 150px;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -75,12 +77,11 @@ header {
 }
 .navLinks li {
     list-style: none;
-    display: inline-block;
-    justify-content: center;
+    display: block;
     width: 70%;
     text-align: left;
-    padding: 10px 0;
-    margin: 0 0 0 35px;
+    padding: 0.5rem;
+    margin:  auto;
     border-top: 1px solid #7f6ff3;
 }
 .navLinks li:last-child {
@@ -91,7 +92,6 @@ header {
     font-weight: 200;
     font-size: 14px;
     color: #ffffff;
-    padding: 10px;
 }
 .navLinks li > a:hover, :active {
     color: #7f6ff3;

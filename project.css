@@ -29,9 +29,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 15%;
-    height: 100vh;
-    padding: 2rem;
+    width: 20%;
+    height: 100%;
+    padding: 1.5rem;
     background-color: #000000;
     box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
@@ -64,8 +64,8 @@ header {
 .profilePicture img {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 150px;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -106,14 +106,15 @@ header {
     top: 0;
     right: 0;
 }
-.projects>p{
+.projects p{
     margin: 2rem auto;
     width: 80%;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: justify;
     color: #ffffff;
+    line-height: 2;
 }
 .projects h3{
     font-family: "Montserrat", sans-serif;
@@ -144,9 +145,9 @@ header {
 }
 .projectItem {
     background-color: #25213f; 
-    padding: 1rem; 
+    padding: 2rem; 
     width: 40%; 
-    height: 28rem;
+    height: 40rem;
     border-radius: 2%;
 }
 .projectItem h2 {
@@ -159,13 +160,16 @@ header {
 }
 .bold{
     color: #7f6ff3;
+    margin-left: -20px;
     margin-right: 10px;
 }
 .projectItem p {
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 0.6rem;
-    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
     color: #ffffff;
     text-indent: 20px;
 }
@@ -297,10 +301,10 @@ header {
     }
     .projects>p{
         margin: 1rem auto;
-        width: 80%;
+        width: 90%;
         font-family: "Montserrat", sans-serif;
         font-weight: lighter;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         text-align: justify;
         color: #ffffff;
     }
@@ -328,14 +332,14 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 1rem;
         margin-bottom: 5rem;
     }
     .projectItem {
         background-color: #25213f; 
         padding: 1rem; 
-        width: 90%; 
+        width: 100%; 
         height: fit-content;
         border-radius: 2%;
     }
@@ -354,14 +358,14 @@ header {
     .projectItem>p {
         font-family: "Montserrat", sans-serif;
         font-weight: lighter;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         text-align: left;
         color: #ffffff;
         width: 100%;
     }
     .tech{
         width: 100%;
-        font-size: 0.4rem;
+        font-size: 0.2rem;
         display: inline;
     }
     .projectItem:hover {

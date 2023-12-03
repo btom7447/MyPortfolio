@@ -29,9 +29,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 15%;
-    height: 100vh;
-    padding: 2rem;
+    width: 20%;
+    height: 100%;
+    padding: 1.5rem;
     background-color: #000000;
     box-shadow: 0 0 10px #7f6ff3;
     z-index: 10;
@@ -64,8 +64,8 @@ header {
 .profilePicture img {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 150px;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -100,7 +100,7 @@ header {
 .skills {
     background-color: #000000;
     height: fit-content;
-    width: calc(100vw - 15%);
+    width: calc(100vw - 20%);
     padding: 5rem;
     position: absolute;
     top: 0;
@@ -110,7 +110,7 @@ header {
     margin: 1rem auto;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-align: justify;
     color: #ffffff;
     line-height: 2;
@@ -139,12 +139,11 @@ header {
     padding: 2rem;
     background-color: transparent;
     color: #ffffff;
-    margin: auto;
 }
 .skillSet ul li {
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     text-align: justify;
     color: #ffffff;
     line-height: 1;
@@ -162,7 +161,7 @@ header {
     margin: 1rem auto;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-align: justify;
     color: #ffffff;
     line-height: 2;
@@ -196,7 +195,7 @@ header {
     border-radius: 2%;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: justify;
     text-indent: 20px;
 }
@@ -218,7 +217,7 @@ header {
 .certificationItem p {
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     text-align: justify;
     color: #ffffff;
     text-indent: 20px;
